@@ -33,7 +33,7 @@ jobs:
         with:
           args: --delete
         env:
-          AWS_S3_BUCKET: tastyworks-site
+          AWS_S3_BUCKET: tastytrade-develop-cdn-origin
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           SOURCE_DIR: "./public"
@@ -44,5 +44,5 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          CLOUDFRONT_DISTRIBUTION_ID: E23XNRX1Q5WJ3T
+          CLOUDFRONT_DISTRIBUTION_ID: E2CT5YL0PCTBCW
       
